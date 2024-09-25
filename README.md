@@ -15,6 +15,7 @@ L2TP frames received over the tunnel are decapsulated and presented on *l2tpethX
 The L2TP virtual device is typically bridged with a physical Ethernet interface, thereby
 connecting two L2 networks over an L3 routed network (e.g. the Internet).
 
+```
   +----------------------------+
   |                     HOST A |
   |                            |
@@ -57,6 +58,7 @@ connecting two L2 networks over an L3 routed network (e.g. the Internet).
   |                            |
   |                            |
   +----------------------------+
+```
 
 The eBPF implementation bypasses the kernel L2TP subsystem and avoids the need for
 L2TP virtual network devices.
